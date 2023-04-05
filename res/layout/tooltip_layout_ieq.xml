@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/leqlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/tooltipIEQarrowup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop_up_black_24dp" android:layout_marginStart="52.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ieq_components_layout" android:background="@drawable/round_corner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tooltipIEQarrowup">
+        <TextView android:id="@id/tooltipIntelligentEqGotIt" android:onClick="onGotItClicked" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/tooltipIntelligentEq" style="@style/TutorialTooltipButton" />
+        <TextView android:id="@id/tooltipIntelligentEq" android:paddingTop="@dimen/tooltip_dialog_lateral_padding" android:text="@string/tooltip_moto_eq_text" android:paddingStart="@dimen/tooltip_dialog_lateral_padding" android:paddingEnd="@dimen/tooltip_dialog_lateral_padding" app:layout_constraintBottom_toTopOf="@id/tooltipIntelligentEqGotIt" app:layout_constraintStart_toStartOf="parent" style="@style/TutorialTooltipText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

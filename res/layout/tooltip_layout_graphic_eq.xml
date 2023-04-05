@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutTootipGE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/dropdownGE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop_up_black_24dp" android:layout_marginStart="52.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bglayout" android:background="@drawable/round_corner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dropdownGE" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dropdownGE">
+        <TextView android:id="@id/tooltipGeqGotIt" android:onClick="onGotItClicked" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/tooltipMovie" style="@style/TutorialTooltipButton" />
+        <TextView android:id="@id/tooltipMovie" android:paddingTop="@dimen/tooltip_dialog_vertical_padding" android:text="@string/tooltip_moto_geq_text" android:paddingStart="@dimen/tooltip_dialog_lateral_padding" android:paddingEnd="@dimen/tooltip_dialog_lateral_padding" app:layout_constraintBottom_toTopOf="@id/tooltipGeqGotIt" app:layout_constraintStart_toStartOf="parent" style="@style/TutorialTooltipText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

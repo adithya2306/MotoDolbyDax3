@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__56" android:duration="111" android:startOffset="0" android:valueFrom="-20.758" android:valueTo="-9" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__57" android:duration="111" android:startOffset="111" android:valueFrom="-9" android:valueTo="-30" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__58" android:duration="111" android:startOffset="222" android:valueFrom="-30" android:valueTo="-9" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__59" android:duration="111" android:startOffset="333" android:valueFrom="-9" android:valueTo="-20.758" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__60" android:duration="722" android:startOffset="444" android:valueFrom="-20.758" android:valueTo="-20.758" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__61" android:duration="111" android:startOffset="1167" android:valueFrom="-20.758" android:valueTo="-9" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__62" android:duration="111" android:startOffset="1278" android:valueFrom="-9" android:valueTo="-30" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__63" android:duration="111" android:startOffset="1389" android:valueFrom="-30" android:valueTo="-9" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__64" android:duration="111" android:startOffset="1500" android:valueFrom="-9" android:valueTo="-20.758" android:valueType="floatType" android:propertyName="rotation" />
+</set>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/profile_settings_reset_button_color" />
+    <stroke android:width="1.0dip" android:color="@color/profile_settings_reset_button_color" />
+    <padding android:left="12.0dip" android:top="6.0dip" android:right="16.0dip" android:bottom="6.0dip" />
+    <corners android:topLeftRadius="@dimen/default_button_radius" android:topRightRadius="@dimen/default_button_radius" android:bottomLeftRadius="@dimen/default_button_radius" android:bottomRightRadius="@dimen/default_button_radius" />
+</shape>

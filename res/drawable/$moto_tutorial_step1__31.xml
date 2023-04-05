@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__32" android:duration="4944" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 682,1418C 679.3333332538605,1422 684.6666667461395,1414 682,1418" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__33" android:duration="167" android:startOffset="4944" android:propertyName="translateXY" android:pathData="M 682,1418C 679.3333332538605,1422 668.6666667461395,1438 666,1442" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__34" android:duration="444" android:startOffset="5111" android:propertyName="translateXY" android:pathData="M 666,1442C 666,1442 666,1442 666,1442" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__35" android:duration="167" android:startOffset="5556" android:propertyName="translateXY" android:pathData="M 666,1442C 670.75,1434.083333492279 689.75,1402.416666507721 694.5,1394.5" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:duration="444" android:startOffset="5722" android:valueFrom="694.5" android:valueTo="694.5" android:valueType="floatType" android:propertyName="translateX" />
+    <objectAnimator android:duration="444" android:startOffset="5722" android:valueFrom="1394.5" android:valueTo="1394.5" android:valueType="floatType" android:propertyName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__36" android:duration="167" android:startOffset="6167" android:propertyName="translateXY" android:pathData="M 694.5,1394.5C 692.4166667461395,1398.4166667461395 684.0833332538605,1414.0833332538605 682,1418" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

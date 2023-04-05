@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.motorola.dolby.dolbyui" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <permission android:name="com.motorola.dolby.dolbyui.permission.READ_MATRIX_SUMMARY" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.motorola.dolby.dolbyui.permission.WRITE_MATRIX_SUMMARY" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="com.motorola.software.dolbyui"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.motorola.permission.ACCESS_CHECKIN"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.dolby.permission.DOLBY_UPDATE_BROADCAST"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <queries>
+        <package android:name="com.dolby.daxservice"/>
+        <package android:name="com.dolby.daxservice.dolbyprovider"/>
+        <package android:name="com.motorola.help"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name_ds1" android:name="com.dolby.dax2appUI.DAXApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="android.max_aspect" android:value="2.3"/>
+        <service android:exported="true" android:icon="@drawable/ic_quicksettings_icon_off" android:label="@string/app_name_quicksettings" android:name="com.motorola.dolby.dolbyui.AudioEffectTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="moto-checkin" android:required="false"/>
+        <uses-library android:name="moto-settings" android:required="false"/>
+        <uses-library android:name="com.motorola.frameworks.core.addon"/>
+        <activity android:clearTaskOnLaunch="true" android:enabled="@bool/default_app_tray_visibility" android:exported="true" android:launchMode="singleInstance" android:name="com.motorola.dolby.dolbyui.ui.LauncherActivity" android:resizeableActivity="false" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:exported="true" android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.ui.welcome.WelcomeActivity" android:resizeableActivity="false" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.dolby.LAUNCH_DS_APP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.extensions.settings.DYNAMIC_SOUND_SETTINGS_PREFERENCES"/>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+                <action android:name="com.motorola.dolby.dolbyui.START"/>
+                <action android:name="com.motorola.dolby.dolbyui.SOUNDSETTINGS_START"/>
+                <action android:name="com.motorola.motoaudio.MOTO_START"/>
+                <action android:name="com.android.settings.action.ACTION_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.CATEGORY_CONTENT_MUSIC"/>
+            </intent-filter>
+            <meta-data android:name="com.motorola.extensions.preference" android:resource="@xml/audio_effect_dynamic_preference"/>
+        </activity>
+        <provider android:authorities="com.motorola.dolby.dolbyui.provider.moto" android:enabled="true" android:exported="true" android:name="com.motorola.dolby.dolbyui.provider.moto.SettingsProvider" android:permission="com.motorola.motoaudio.permission.ACCESS_AUDIO_SETTINGS"/>
+        <activity android:clearTaskOnLaunch="true" android:exported="false" android:label="@string/app_name_ds1" android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.MotoMainActivity" android:resizeableActivity="false" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity-alias android:enabled="@bool/enable_option_audio_enhancement_on_gametime" android:exported="false" android:name="com.motorola.dolby.dolbyui.gamemode.dpclient.AudioEnhancementSwitch" android:targetActivity="com.motorola.dolby.dolbyui.MotoMainActivity">
+            <intent-filter>
+                <action android:name="com.motorola.gamemode.DYNAMIC_SETTINGS_PREFERENCES"/>
+            </intent-filter>
+            <meta-data android:name="com.motorola.extensions.preference" android:resource="@xml/audio_enhancement"/>
+        </activity-alias>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.ui.about.MotoDolbyInfoActivity" android:resizeableActivity="false" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.ui.license.MotoAudioLicenseActivity" android:resizeableActivity="false" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.ui.profileSettings.ProfileSettingsActivity" android:resizeableActivity="false" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.SelfDestroyActivity" android:resizeableActivity="false" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.ui.mainSettings.MainSettingsActivity" android:resizeableActivity="false" android:theme="@style/AppTheme.NoActionBar"/>
+        <provider android:authorities="com.motorola.dolby.dolbyui.audiofxdynamicprefprovider" android:enabled="true" android:exported="true" android:name="com.motorola.dolby.dolbyui.AudioEffectDynamicPrefProvider" android:readPermission="com.motorola.dolby.dolbyui.permission.READ_MATRIX_SUMMARY" android:writePermission="com.motorola.dolby.dolbyui.permission.WRITE_MATRIX_SUMMARY"/>
+        <provider android:authorities="com.motorola.dolbyui.dynamicprefprovider" android:enabled="@bool/enable_option_audio_enhancement_on_gametime" android:exported="true" android:name="com.motorola.dolby.dolbyui.gamemode.dpclient.MotoSoundDynamicPreferenceProvider" android:permission="com.motorola.gamemode.permission.LAUNCH_GAMEMODE"/>
+        <service android:exported="false" android:name="com.motorola.dolby.dolbyui.checkin.CheckinSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.motorola.dolby.dolbyui.audioState.DeviceAudioStateUpdateReceiver" android:permission="com.dolby.permission.DOLBY_UPDATE_BROADCAST">
+            <intent-filter>
+                <action android:name="com.dolby.daxuser.audio.ACTION_UPDATE_AUDIO_CHANNEL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.motorola.dolby.dolbyui.userSwitch.UserSwitchReceiver" android:permission="com.dolby.permission.DOLBY_UPDATE_BROADCAST">
+            <intent-filter>
+                <action android:name="com.dolby.daxuser.audio.ACTION_DOLBY_UPDATE_USER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/enable_option_audio_enhancement_on_gametime" android:exported="true" android:name="com.motorola.dolby.dolbyui.gamemode.GameModeBroadcastReceiver" android:permission="com.dolby.permission.DOLBY_UPDATE_BROADCAST">
+            <intent-filter>
+                <action android:name="com.dolby.daxuser.gamemode.ACTION_DOLBY_UPDATE_GAMEMODE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.motorola.dolby.dolbyui.ui.newDevice.NotificationsReceiver">
+            <intent-filter>
+                <action android:name="com.motorola.dolby.dolbyui.ACTION_DEVICE_CHANGED"/>
+                <action android:name="com.motorola.dolby.dolbyui.ACTION_HIDE_NEW_DEVICE_NOTIFICATION"/>
+                <action android:name="com.motorola.dolby.dolbyui.ACTION_SETUP_NEW_DEVICE_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.motorola.dolby.dolbyui.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.motorola.dolby.dolbyui.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+    </application>
+</manifest>

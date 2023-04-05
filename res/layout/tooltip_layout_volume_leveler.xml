@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/vlTooltipLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/lvDropdownImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop_down_black_24dp" android:layout_marginStart="52.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bglayout4" android:background="@drawable/round_corner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/lvDropdownImageView" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:id="@id/tooltipVolumeLevelerGotItTextView" android:onClick="onGotItClicked" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/tooltipVolumeLevelerTextView" style="@style/TutorialTooltipButton" />
+        <TextView android:id="@id/tooltipVolumeLevelerTextView" android:paddingTop="@dimen/tooltip_dialog_vertical_padding" android:text="@string/tooltip_moto_vl_text" android:paddingStart="@dimen/tooltip_dialog_lateral_padding" android:paddingEnd="@dimen/tooltip_dialog_lateral_padding" app:layout_constraintBottom_toTopOf="@id/tooltipVolumeLevelerGotItTextView" app:layout_constraintStart_toStartOf="parent" style="@style/TutorialTooltipText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

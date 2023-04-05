@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__14" android:duration="2778" android:startOffset="0" android:valueFrom="-23.563" android:valueTo="-23.563" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__15" android:duration="278" android:startOffset="2778" android:valueFrom="-23.563" android:valueTo="7.333" android:valueType="floatType" android:propertyName="rotation" />
+</set>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/activity_dolby_info_bar" app:layout_constraintBottom_toTopOf="@id/tooltipGeqLayout" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/app_bar" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/tooltipGeqLayout" android:background="@color/colorMainBackground" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@id/activity_dolby_info_bar" app:layout_constraintTop_toBottomOf="@id/activity_dolby_info_bar">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/tutorial_image" android:src="@drawable/moto_tutorial_step1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:lottie_rawRes="@raw/moto_tutorial_step1" style="@style/TutorialLottieAnimations" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tutorial_image">
+            <include layout="@layout/about_content" />
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

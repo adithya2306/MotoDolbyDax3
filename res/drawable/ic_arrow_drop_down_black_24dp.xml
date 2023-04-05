@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="14.0dip" android:width="22.0dip" android:viewportWidth="22.0" android:viewportHeight="14.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:pivotX="11.0" android:pivotY="7.0" android:rotation="180.0">
+        <path android:fillColor="@color/colorTutorialTooltipBackground" android:pathData="M22,14 L12.47,1.16c-1.09,-1.51 -2.76,-1.55 -3.72,0L0,14Z" />
+    </group>
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/app_bar" />
+    <RelativeLayout android:orientation="vertical" android:background="@color/colorMainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:textSize="@dimen/license_screen_message_fontsize" android:textColor="@color/activity_tutorial_text_color" android:id="@id/webview" android:background="@color/colorMainBackground" android:paddingTop="@dimen/license_screen_message_padding_vertical" android:paddingBottom="@dimen/license_screen_message_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAlignment="viewStart" android:layout_marginStart="@dimen/license_screen_message_padding_lateral" android:layout_marginEnd="@dimen/license_screen_message_padding_lateral" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dynamic-switch-preference dataAuthority="com.motorola.dolbyui.dynamicprefprovider" key="audio_enhancement" orderBelow="key_brightness" summary="@string/audio_enhancement_summary" title="@string/audio_enhancement_title" />

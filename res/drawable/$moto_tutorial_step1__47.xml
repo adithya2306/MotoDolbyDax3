@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__48" android:duration="4944" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 682,1418C 687.333333492279,1409 676.666666507721,1427 682,1418" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__49" android:duration="167" android:startOffset="4944" android:propertyName="translateXY" android:pathData="M 682,1418C 687.333333492279,1409 708.666666507721,1373 714,1364" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__50" android:duration="444" android:startOffset="5111" android:propertyName="translateXY" android:pathData="M 714,1364C 714,1364 714,1364 714,1364" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__51" android:duration="167" android:startOffset="5556" android:propertyName="translateXY" android:pathData="M 714,1364C 703.6666669845581,1380.9166660308838 662.3333330154419,1448.5833339691162 652,1465.5" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__52" android:duration="444" android:startOffset="5722" android:propertyName="translateXY" android:pathData="M 652,1465.5C 652,1465.5 652,1465.5 652,1465.5" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__53" android:duration="167" android:startOffset="6167" android:propertyName="translateXY" android:pathData="M 652,1465.5C 657,1457.583333492279 677,1425.916666507721 682,1418" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

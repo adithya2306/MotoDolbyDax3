@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/activity_welcome_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="@color/colorMainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/app_bar_main" />
+        <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/welcomeNavigationFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" bind:defaultNavHost="true" bind:navGraph="@navigation/nav_welcome" />
+    </LinearLayout>
+    <include android:id="@id/welcomeSplashLayout" android:visibility="gone" layout="@layout/splash_screen" />
+</FrameLayout>

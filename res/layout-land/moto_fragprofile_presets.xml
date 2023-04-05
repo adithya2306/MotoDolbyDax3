@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/presetsListHeaderLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/moto_fragprofile_presets_header" />
+    <RelativeLayout android:orientation="vertical" android:paddingBottom="@dimen/fragprofile_header_device_info_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/presetsListHeaderLayout" android:backgroundTint="@color/colorMainBackground">
+        <androidx.cardview.widget.CardView android:id="@id/monoCardView" android:paddingBottom="@dimen/fragprofile_header_device_info_vertical_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_alignParentTop="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" android:layout_alignParentStart="true">
+            <include layout="@layout/mono_device_info" />
+        </androidx.cardview.widget.CardView>
+        <include android:id="@id/dolby_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/monoCardView" android:layout_alignParentTop="true" android:layout_alignParentStart="true" layout="@layout/main_screen_dolby_state_bar" />
+        <include android:id="@id/presetsDeviceInformationLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dolby_status_bar" android:layout_alignParentStart="true" layout="@layout/main_screen_connected_device_bar" />
+        <ListView android:id="@id/profilesList" android:padding="0.0dip" android:paddingTop="@dimen/main_screen_profile_list_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/colorProfilesListDivider" android:layout_below="@id/presetsDeviceInformationLayout" android:backgroundTint="@color/colorMainBackground" />
+    </RelativeLayout>
+</RelativeLayout>

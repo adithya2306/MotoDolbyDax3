@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper android:id="@id/seekBarWrapper" android:layout_width="wrap_content" android:layout_height="@dimen/slider_height" android:paddingEnd="@dimen/slider_separation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar android:id="@id/seekBar" android:layout_width="0.0dip" android:layout_height="0.0dip" android:max="100" android:progressDrawable="@drawable/slider_style" android:thumb="@drawable/slider_thumb" android:splitTrack="false" app:seekBarRotation="CW270" />
+</com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>

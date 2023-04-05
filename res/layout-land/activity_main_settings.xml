@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout-land/activity_main_settings_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/app_bar" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" layout="@layout/app_bar" />
+    <RelativeLayout android:background="@color/colorMainBackground" android:layout_width="wrap_content" android:layout_height="0.0dip" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintStart_toStartOf="@id/app_bar" bind:layout_constraintTop_toBottomOf="@id/app_bar">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/tutorial_image" bind:lottie_rawRes="@raw/moto_tutorial_step1_land" style="@style/TutorialLottieAnimations" />
+        <ScrollView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_toEndOf="@id/tutorial_image">
+            <include layout="@layout/activity_main_settings_options" />
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

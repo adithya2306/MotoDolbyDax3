@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__24" android:duration="4944" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 682,1418C 676.666666507721,1426.333333015442 687.333333492279,1409.666666984558 682,1418" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__25" android:duration="167" android:startOffset="4944" android:propertyName="translateXY" android:pathData="M 682,1418C 676.666666507721,1426.333333015442 655.333333492279,1459.666666984558 650,1468" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__26" android:duration="444" android:startOffset="5111" android:propertyName="translateXY" android:pathData="M 650,1468C 650,1468 650,1468 650,1468" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__27" android:duration="167" android:startOffset="5556" android:propertyName="translateXY" android:pathData="M 650,1468C 659.75,1452 698.75,1388 708.5,1372" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__28" android:duration="444" android:startOffset="5722" android:propertyName="translateXY" android:pathData="M 708.5,1372C 708.5,1372 708.5,1372 708.5,1372" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__29" android:duration="167" android:startOffset="6167" android:propertyName="translateXY" android:pathData="M 708.5,1372C 704.083333492279,1379.666666507721 686.416666507721,1410.333333492279 682,1418" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

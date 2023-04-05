@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/welcomeOneFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="WelcomeOneFragment" android:name="com.motorola.dolby.dolbyui.ui.welcome.WelcomeOneFragment" android:id="@id/welcomeOneFragment">
+        <action android:id="@id/action_welcomeOne_to_welcomeTwo" app:destination="@id/welcomeTwoFragment" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment android:label="WelcomeTwoFragment" android:name="com.motorola.dolby.dolbyui.ui.welcome.WelcomeTwoFragment" android:id="@id/welcomeTwoFragment">
+        <action android:id="@id/action_welcomeTwo_to_mainScreen" app:destination="@id/motoMainActivity" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment android:label="WhatsNewFragment" android:name="com.motorola.dolby.dolbyui.ui.welcome.WhatsNewFragment" android:id="@id/whatsNewFragment">
+        <action android:id="@id/action_whatsNew_to_mainScreen" app:destination="@id/motoMainActivity" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <activity android:label="MotoMainActivity" android:name="com.motorola.dolby.dolbyui.MotoMainActivity" android:id="@id/motoMainActivity" />
+</navigation>

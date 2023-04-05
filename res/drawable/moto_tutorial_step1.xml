@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$moto_tutorial_step1__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="_R_G_L_0_G_L_10_C_0" android:animation="@drawable/$moto_tutorial_step1__1" />
+    <target android:name="_R_G_L_0_G_L_8_G_T_1" android:animation="@drawable/$moto_tutorial_step1__4" />
+    <target android:name="_R_G_L_0_G_L_8_G_T_1" android:animation="@drawable/$moto_tutorial_step1__8" />
+    <target android:name="_R_G_L_0_G_L_8_G_T_1" android:animation="@drawable/$moto_tutorial_step1__13" />
+    <target android:name="_R_G_L_0_G_L_7_G" android:animation="@drawable/$moto_tutorial_step1__16" />
+    <target android:name="_R_G_L_0_G_L_6_G" android:animation="@drawable/$moto_tutorial_step1__17" />
+    <target android:name="_R_G_L_0_G_L_6_G_M" android:animation="@drawable/$moto_tutorial_step1__22" />
+    <target android:name="_R_G_L_0_G_L_5_G_T_1" android:animation="@drawable/$moto_tutorial_step1__23" />
+    <target android:name="_R_G_L_0_G_L_5_G_T_1" android:animation="@drawable/$moto_tutorial_step1__30" />
+    <target android:name="_R_G_L_0_G_L_4_G_T_1" android:animation="@drawable/$moto_tutorial_step1__31" />
+    <target android:name="_R_G_L_0_G_L_4_G_T_1" android:animation="@drawable/$moto_tutorial_step1__37" />
+    <target android:name="_R_G_L_0_G_L_3_G" android:animation="@drawable/$moto_tutorial_step1__38" />
+    <target android:name="_R_G_L_0_G_L_2_G_T_1" android:animation="@drawable/$moto_tutorial_step1__39" />
+    <target android:name="_R_G_L_0_G_L_2_G_T_1" android:animation="@drawable/$moto_tutorial_step1__46" />
+    <target android:name="_R_G_L_0_G_L_1_G_T_1" android:animation="@drawable/$moto_tutorial_step1__47" />
+    <target android:name="_R_G_L_0_G_L_1_G_T_1" android:animation="@drawable/$moto_tutorial_step1__54" />
+    <target android:name="_R_G_L_0_G_L_0_G" android:animation="@drawable/$moto_tutorial_step1__55" />
+    <target android:name="_R_G_L_0_G_L_0_G" android:animation="@drawable/$moto_tutorial_step1__65" />
+    <target android:name="time_group" android:animation="@drawable/$moto_tutorial_step1__66" />
+</animated-vector>

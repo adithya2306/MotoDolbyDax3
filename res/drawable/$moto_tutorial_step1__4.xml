@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__5" android:duration="2379" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 724,1371C 724.1666666716337,1371 701.6666660308838,1371 724,1371" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__6" android:duration="398" android:startOffset="2379" android:propertyName="translateXY" android:pathData="M 724,1371C 724.1666666716337,1371 702.6666660308838,1371 725,1371" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$moto_tutorial_step1__7" android:duration="278" android:startOffset="2778" android:propertyName="translateXY" android:pathData="M 725,1371C 747.3333339691162,1371 835.8333339691162,1371 858,1371" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dynamic-preference autoRefresh="true" dataAuthority="com.motorola.dolby.dolbyui.audiofxdynamicprefprovider" icon="@drawable/ic_soundsettings_icon" key="moto_sound" orderAbove="zen_mode" summary="@string/setting_summary" title="@string/app_name_ds1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <intent android:action="com.motorola.dolby.dolbyui.SOUNDSETTINGS_START" />
+</dynamic-preference>
