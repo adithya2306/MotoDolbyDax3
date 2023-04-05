@@ -28,13 +28,17 @@
         <uses-library android:name="moto-checkin" android:required="false"/>
         <uses-library android:name="moto-settings" android:required="false"/>
         <uses-library android:name="com.motorola.frameworks.core.addon"/>
-        <activity android:clearTaskOnLaunch="true" android:enabled="@bool/default_app_tray_visibility" android:exported="true" android:launchMode="singleInstance" android:name="com.motorola.dolby.dolbyui.ui.LauncherActivity" android:resizeableActivity="false" android:theme="@style/Theme.Transparent">
+        <!--activity android:clearTaskOnLaunch="true" android:enabled="@bool/default_app_tray_visibility" android:exported="true" android:launchMode="singleInstance" android:name="com.motorola.dolby.dolbyui.ui.LauncherActivity" android:resizeableActivity="false" android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
+        </activity-->
         <activity android:clearTaskOnLaunch="true" android:exported="true" android:launchMode="singleTask" android:name="com.motorola.dolby.dolbyui.ui.welcome.WelcomeActivity" android:resizeableActivity="false" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
             <intent-filter>
                 <action android:name="com.dolby.LAUNCH_DS_APP"/>
                 <category android:name="android.intent.category.DEFAULT"/>
